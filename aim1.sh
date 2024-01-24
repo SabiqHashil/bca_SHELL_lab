@@ -1,4 +1,7 @@
 # Write a script to find area of a circle
-echo "Enter the radious" read r
+
+echo "Enter the radious" 
+read r
 echo $r
-echo "Area of the Circle is" echo "3.14 * $r * $r" | bc
+echo "Area of the Circle is" 
+echo "3.14 * $r * $r" | bc

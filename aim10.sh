@@ -1,4 +1,5 @@
 # Write a shell script to check whether a given number is Armstrong or not
+
 echo "Enter a number: " 
 read c
 x=$c 

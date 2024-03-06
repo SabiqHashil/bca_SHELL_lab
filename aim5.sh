@@ -2,22 +2,21 @@
 
 # method 1
 
-echo Enter three integers with space between 
+echo Enter three integers with space between
 read a b c
-sum=`expr $a + $b + $c` 
+sum=$(expr $a + $b + $c)
 echo Sum=$sum
 
 # method 2
 
 echo "Enter three integers with space between"
 read a b c
-sum=`expr $a + $b + $c`
-mean=`expr $sum / 3`
+sum=$(expr $a + $b + $c)
+mean=$(expr $sum / 3)
 aa=$((($a - $mean) * ($a - $mean)))
 bb=$((($b - $mean) * ($b - $mean)))
 cc=$((($c - $mean) * ($c - $mean)))
-sd=$( echo "sqrt(($aa + $bb + $cc) / 3)" | bc -l )
+sd=$(echo "sqrt(($aa + $bb + $cc) / 3)" | bc -l)
 echo "sum=$sum"
 echo "mean=$mean"
 echo "Sd=$sd"
-

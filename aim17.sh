@@ -2,10 +2,8 @@
 
 sum=0
 count=1
-for x in $*
-do
-    if [ $count -eq 1 ]
-    then
+for x in $*; do
+    if [ $count -eq 1 ]; then
         p=$x
     else
         sum=$(($sum + $x))

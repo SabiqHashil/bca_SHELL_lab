@@ -2,28 +2,24 @@
 
 # method 1
 
-echo Enter the filename 
+echo Enter the filename
 read filename
-echo Contents of $filename before converting to uppercase 
+echo Contents of $filename before converting to uppercase
 cat $filename
 
-echo Contents of $filename after converting to uppercase 
-tr '[a-z]''[A-Z]' < $filename
+echo Contents of $filename after converting to uppercase
+tr '[a-z]''[A-Z]' <$filename
 
 # method 2
 
-getFile()
-{
-     echo -n "Enter File Name:"
+getFile() {
+    echo -n "Enter File Name:"
     read txtFileName
-  
- 
+
 }
 
 clear
-      getFile
-      # Converting to upper case if user chose 2
-      echo "Converting Lower-Case to Upper-Case "
-      tr '[a-z]' '[A-Z]' <$txtFileName
-      
-  
+getFile
+# Converting to upper case if user chose 2
+echo "Converting Lower-Case to Upper-Case "
+tr '[a-z]' '[A-Z]' <$txtFileName

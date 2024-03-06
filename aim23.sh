@@ -1,6 +1,5 @@
 # Write a shell script to find number of vowels, consonants, numbers in a given string.
 
-
 echo -n "Enter a line of text: "
 read string
 

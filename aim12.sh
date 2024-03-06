@@ -1,4 +1,4 @@
-# Write a shell script to count no of line, words and characters of a input file.
+# Write a shell script to count no of line, words and characters of a input file( enter file name 1.sh)
 
 echo Enter the filename 
 read file

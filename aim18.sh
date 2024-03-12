@@ -1,12 +1,17 @@
-# Write a shell script which whenever gets executed displays the message Good Morning / Good afternoon / Good Evening depending on the time it gets executed
+# 18. Write a shell script to find the average of the numbers entered as command line arguments
 
-hour=$(date +%H)
-if [ $hour -lt 12 ]; then
-	echo "GOOD MORNING WORLD"
-elif [ $hour -le 16 ]; then
-	echo "GOOD AFTERNOON WORLD"
-elif [ $hour -le 20 ]; then
-	echo "GOOD EVENING WORLD"
-else
-	echo "GOOD NIGHT WORLD"
-fi
+
+
+sum=0
+count=1
+for x in $*
+do
+    if [ $count -eq 1 ]
+    then
+        p=$x
+    else
+        sum=$(($sum + $x))
+    fi
+    ((count++))
+done
+echo "scale=3;$sum/$p" | bc

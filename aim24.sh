@@ -1,4 +1,4 @@
-# Write a shell script to perform operations like display, list, make directory and copy, rename, delete
+# 24. Write a shell script to perform operations like display, list, make directory and copy, rename, delete
 
 clear
 i="y"while [ $i = "y" ] 

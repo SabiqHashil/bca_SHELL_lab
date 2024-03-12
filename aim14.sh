@@ -1,7 +1,8 @@
-# Write a script to find the value of one number raised to the power of another. Twonumbers are entered through the keyboard.
+# 14. An employee Basic Pay is input through keyboard where DA is 40% of basic pay and HRA is 20% of basic pay. Write a shell script to calculate gross salary, Gross Salary =Basic Pay + DA + HRA
 
-echo "Enter a number: "
-read a
-echo "Enter a number: "
-read b
-echo "$(($a ** $b))"
+
+
+echo "enter the basic salary:"
+read basal
+grosal=$( echo "$basal+((40/100)*$basal)+((20/100)*$basal)" | bc -l)
+echo "The gross salary : $grosal"

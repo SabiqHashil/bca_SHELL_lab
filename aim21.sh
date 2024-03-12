@@ -1,48 +1,57 @@
-# Write a shell script which uses all the file test operators
+# 21. Write a shell script which uses all the file test operators
+
+
+
+
 
 #!/bin/sh
-
 echo -n "Enter File Name:"
 read file
-
-if [ -r $file ]; then
-   echo "File has read access"
+if [ -r $file ]
+then
+    echo "File has read access"
 else
-   echo "File does not have read access"
+    echo "File does not have read access"
 fi
 
-if [ -w $file ]; then
-   echo "File has write permission"
+if [ -w $file ]
+then
+    echo "File has write permission"
 else
-   echo "File does not have write permission"
+    echo "File does not have write permission"
 fi
 
-if [ -x $file ]; then
-   echo "File has execute permission"
+if [ -x $file ]
+then
+    echo "File has execute permission"
 else
-   echo "File does not have execute permission"
+    echo "File does not have execute permission"
 fi
 
-if [ -f $file ]; then
-   echo "File is an ordinary file"
+if [ -f $file ]
+then
+    echo "File is an ordinary file"
 else
-   echo "This is sepcial file"
+    echo "This is sepcial file"
 fi
 
-if [ -d $file ]; then
-   echo "File is a directory"
+if [ -d $file ]
+then
+    echo "File is a directory"
 else
-   echo "This is not a directory"
+    echo "This is not a directory"
 fi
 
-if [ -s $file ]; then
-   echo "File size is not zero"
+if [ -s $file ]
+then
+    echo "File size is not zero"
 else
-   echo "File size is zero"
+    echo "File size is zero"
 fi
 
-if [ -e $file ]; then
-   echo "File exists"
+if [ -e $file ]
+then
+    echo "File exists"
 else
-   echo "File does not exist"
+    echo "File does not exist"
 fi

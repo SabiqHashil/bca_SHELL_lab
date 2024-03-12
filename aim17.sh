@@ -1,13 +1,11 @@
-# Write a shell script to find the average of the numbers entered as command line arguments
+# 17. Write a shell script to find the value of one number raised to the power of another. Two numbers are entered through the keyboard.
 
-sum=0
-count=1
-for x in $*; do
-    if [ $count -eq 1 ]; then
-        p=$x
-    else
-        sum=$(($sum + $x))
-    fi
-    ((count++))
-done
-echo "scale=3;$sum/$p" | bc
+
+
+
+
+echo "Enter a number: "
+read a
+echo "Enter a number: "
+read b
+echo "$(($a ** $b))"

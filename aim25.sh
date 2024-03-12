@@ -1,4 +1,4 @@
-# Write a shell script to compare two files and remove one of them if they are same
+# 25. Write a shell script to compare two files and remove one of them if they are same
 
 echo "Enter first file name "
 read file1

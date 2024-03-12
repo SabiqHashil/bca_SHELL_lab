@@ -1,13 +1,19 @@
-# Write a shell script find the factorial of a given number
+# 15. Write a shell script which whenever gets executed displays the message Good Morning/Good afternoon /Good Evening depending on the time it gets executed
 
-echo "Enter a number"
-read num
 
-fact=1
 
-while [ $num -gt 1 ]; do
-    fact=$((fact * num))
-    num=$((num - 1))
-done
 
-echo $fact
+
+hour=`date +%H`
+if [ $hour -lt 12 ]
+then
+    echo "GOOD MORNING WORLD"
+elif [ $hour -le 16 ]
+then
+    echo "GOOD AFTERNOON WORLD"
+elif [ $hour -le 20 ]
+then
+    echo "GOOD EVENING WORLD"
+else
+    echo "GOOD NIGHT WORLD"
+fi

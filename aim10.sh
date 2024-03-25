@@ -1,4 +1,4 @@
-10. Write a shell script to check whether a given number is Armstrong or not
+# 10. Write a shell script to check whether a given number is Armstrong or not
 
 
 
